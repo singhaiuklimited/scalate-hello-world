@@ -13,7 +13,7 @@ cache:
     - $HOME/.sbt/boot
 
 script:
-  - sbt ++$TRAVIS_SCALA_VERSION clean compile validateJVM;
+  - sbt ++$TRAVIS_SCALA_VERSION clean compile;
 
   # See http://www.scala-sbt.org/0.13/docs/Travis-CI-with-sbt.html
   # Tricks to avoid unnecessary cache updates
